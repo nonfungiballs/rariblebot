@@ -3,10 +3,6 @@ import json
 import random
 import time
 
-from tqdm.notebook import trange
-from time import sleep
-from random import randint
-from tqdm import tqdm
 from config import WALLETS
 from web3 import AsyncWeb3
 from web3.providers.async_rpc import AsyncHTTPProvider
@@ -33,14 +29,7 @@ async def check_status(wallet, claim_txn_hash):
             time.sleep(5)
         except Exception as error:
             time.sleep(5)
-
-
-
-
-# async def sleep_indicator(delay):
-#     for i in tqdm(range(delay), desc='Waiting', bar_format="{desc}:{percentage:3.0f}% {bar}", colour='green'):
-#         await asyncio.sleep(0.5)
-
+            
 
 async def claim_nft(wallet: str):
     account = polygon_w3.eth.account.from_key(wallet)
@@ -55,7 +44,7 @@ async def claim_nft(wallet: str):
         "data": '0x'
     }
 
-    delay = random.randint(1, 200)
+    delay = random.randint(1, 1000)
     print(f'Wallet: {address} | Bot will wait for {delay} seconds before the start.')
     await asyncio.sleep(delay)
     claim_txn = await rarible_contract.functions.claim(
