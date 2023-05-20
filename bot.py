@@ -81,7 +81,7 @@ async def main():
         task = claim_nft(wallet)
         tasks.append(task)
     await asyncio.sleep(2)
-    mints = await asyncio.gather(*tasks)
+    await asyncio.gather(*tasks)
     print("FINISHED")
 
 if __name__ == '__main__':
