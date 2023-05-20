@@ -15,6 +15,7 @@ rarible_abi = json.load(open('rarible_abi.json'))
 rarible_address = polygon_w3.to_checksum_address('0x8E0DCCa4E6587d2028ed948b7285791269059a62')
 rarible_contract = polygon_w3.eth.contract(address=rarible_address, abi=rarible_abi)
 
+
 async def check_status(wallet, claim_txn_hash):
     account = polygon_w3.eth.account.from_key(wallet)
     address = account.address
