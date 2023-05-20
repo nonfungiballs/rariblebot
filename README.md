@@ -1,7 +1,7 @@
 # rariblebot
 ![](image/rarible.png)
 ## <sup>Грязно минтим нфт от Рарибл на все еблище</sup>
-  1. Вот тут скачай (если еще не скачивал) **Pythop 3.10+** и установи, иначе хуй ты че запустишь: https://www.python.org/downloads/
+  1. Вот тут скачай (если еще не скачивал) **Python 3.10+** и установи, иначе хуй ты че запустишь: https://www.python.org/downloads/
 
   2. Далее скачай и установи **PyCharm** или любую другую IDE на твое усмотрение: https://www.jetbrains.com/ru-ru/pycharm/
 
